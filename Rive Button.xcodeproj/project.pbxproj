@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730AA1152B0647F40025B316 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730AA1142B0647F40025B316 /* SwiftUIView.swift */; };
 		736AA1822B06429C00EE220A /* Rive_ButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736AA1812B06429C00EE220A /* Rive_ButtonApp.swift */; };
 		736AA1842B06429C00EE220A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736AA1832B06429C00EE220A /* ContentView.swift */; };
 		736AA1862B06429D00EE220A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736AA1852B06429D00EE220A /* Assets.xcassets */; };
 		736AA1892B06429D00EE220A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736AA1882B06429D00EE220A /* Preview Assets.xcassets */; };
+		736AA1912B06430A00EE220A /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 736AA1902B06430A00EE220A /* RiveRuntime */; };
+		736AA1932B06436A00EE220A /* menu_button.riv in Resources */ = {isa = PBXBuildFile; fileRef = 736AA1922B06436A00EE220A /* menu_button.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		730AA1142B0647F40025B316 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		736AA17E2B06429C00EE220A /* Rive Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rive Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		736AA1812B06429C00EE220A /* Rive_ButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rive_ButtonApp.swift; sourceTree = "<group>"; };
 		736AA1832B06429C00EE220A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		736AA1852B06429D00EE220A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736AA1882B06429D00EE220A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		736AA1922B06436A00EE220A /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736AA1912B06430A00EE220A /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +59,9 @@
 			children = (
 				736AA1812B06429C00EE220A /* Rive_ButtonApp.swift */,
 				736AA1832B06429C00EE220A /* ContentView.swift */,
+				730AA1142B0647F40025B316 /* SwiftUIView.swift */,
 				736AA1852B06429D00EE220A /* Assets.xcassets */,
+				736AA1922B06436A00EE220A /* menu_button.riv */,
 				736AA1872B06429D00EE220A /* Preview Content */,
 			);
 			path = "Rive Button";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "Rive Button";
+			packageProductDependencies = (
+				736AA1902B06430A00EE220A /* RiveRuntime */,
+			);
 			productName = "Rive Button";
 			productReference = 736AA17E2B06429C00EE220A /* Rive Button.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 736AA1752B06429C00EE220A;
+			packageReferences = (
+				736AA18F2B06430A00EE220A /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = 736AA17F2B06429C00EE220A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +141,7 @@
 			files = (
 				736AA1892B06429D00EE220A /* Preview Assets.xcassets in Resources */,
 				736AA1862B06429D00EE220A /* Assets.xcassets in Resources */,
+				736AA1932B06436A00EE220A /* menu_button.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +154,7 @@
 			files = (
 				736AA1842B06429C00EE220A /* ContentView.swift in Sources */,
 				736AA1822B06429C00EE220A /* Rive_ButtonApp.swift in Sources */,
+				730AA1152B0647F40025B316 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		736AA18F2B06430A00EE220A /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		736AA1902B06430A00EE220A /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 736AA18F2B06430A00EE220A /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 736AA1762B06429C00EE220A /* Project object */;
 }
